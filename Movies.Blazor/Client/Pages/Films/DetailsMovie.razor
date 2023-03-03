@@ -1,0 +1,11 @@
+﻿@page "/movie/{MovieId:int}"
+@page "/movie/{MovieId:int}/{MovieName}"
+
+<h3>DetailsMovie</h3>
+
+@code {
+    //name of this parameter needs to be same to url name parameter.
+    [Parameter] public int MovieId { get; set; }
+    // url string parameter didnot need to type definition in url. 
+    [Parameter] public string MovieName { get; set; }
+}

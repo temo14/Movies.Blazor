@@ -1,9 +1,8 @@
 ﻿using Movies.Blazor.Shared.Entities;
 
-namespace Movies.Blazor.Client.Helpers
+namespace Movies.Blazor.Client.Helpers;
+
+public interface IRepository
 {
-    public interface IRepository
-    {
-        List<Movie> GetMovies();
-    }
+    List<Movie> GetMovies();
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.JSInterop;
+﻿using Microsoft.AspNetCore.Components;
+using Microsoft.JSInterop;
 
 namespace Movies.Blazor.Client.Pages
 {
@@ -6,7 +7,7 @@ namespace Movies.Blazor.Client.Pages
     {
         private int currentCount = 0;
         private static int currentCountStatic = 0;
-
+        [CascadingParameter(Name = "Color")] public string Color { get; set; }
         private void IncrementCount()
         {
             currentCount++;

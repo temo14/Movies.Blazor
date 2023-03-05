@@ -1,5 +1,13 @@
-﻿<h3>CreatePerson</h3>
+﻿@page "/person/create"
+
+<h3>CreatePerson</h3>
+
+<PersonForm Person="Person" OnValidSubmit="Create" />
 
 @code {
-
+    Person Person = new();
+    void Create()
+    {
+        
+    }
 }
